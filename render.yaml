@@ -1,0 +1,9 @@
+services:
+- type: web
+  name: lunaria-chatbot
+  env: python
+  buildCommand: ""
+  startCommand: gunicorn main:app
+  envVars:
+    - key: TOGETHER_API_KEY
+      value: tgp_v1_8mNixmwiwIrNf1iGBld_EwVP_eoxEnJZrVsRaVMqTLQ
